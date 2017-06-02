@@ -1,0 +1,52 @@
+//多组值参数mixin
+//如果一个参数可以有多组值，如box-shadow、transition等，那么参数则需要在变量后加三个点表示，如$variables...。
+//sass style
+//-------------------------------
+//box-shadow可以有多组值，所以在变量参数后面添加...
+//@mixin box-shadow($shadow...) {
+//  -webkit-box-shadow:$shadow;
+//  box-shadow:$shadow;
+//}
+//.box{
+//  border:1px solid #ccc;
+//  @include box-shadow(0 2px 2px rgba(0,0,0,.3),0 3px 3px rgba(0,0,0,.3),0 4px 4px rgba(0,0,0,.3));
+//}
+
+//css style
+//-------------------------------
+//.box{
+//  border:1px solid #ccc;
+//  -webkit-box-shadow:0 2px 2px rgba(0,0,0,.3),0 3px 3px rgba(0,0,0,.3),0 4px 4px rgba(0,0,0,.3);
+//  box-shadow:0 2px 2px rgba(0,0,0,.3),0 3px 3px rgba(0,0,0,.3),0 4px 4px rgba(0,0,0,.3);
+//}
+
+//@mixin bg($w:100px,$gb:red){
+//  background: $gb;
+//  width: $w;
+//  height: $w/2;
+//}
+//
+//.test{
+//  @include bg($w:10px);
+//}
+
+.p{
+  width: 100px;
+  height: 100px;
+}
+//
+//.test{
+//  @extend .p;
+//  background: red;
+//}
+
+$oneWidth: 10px;
+$twoWidth: 40px;
+
+@function widthFn($n) {
+  @return $n*$oneWidth;
+}
+
+.test {
+  width: widthFn(5);
+}
