@@ -1,3 +1,9 @@
-import a from './test.js';
+import {foo} from './test.js';
 
-a.alert();
+//a.alert();
+
+console.log(foo);
+
+setTimeout(()=>{
+  console.log(foo)
+},1500);

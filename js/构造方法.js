@@ -54,4 +54,4 @@ var o = new Rectangle1('红色');
 //o.move(2,2);
 o.getColor();
 
-//Object.assign Object.create()
+//Object.assign Object.create() Object.defineProperty
