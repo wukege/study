@@ -1,0 +1,96 @@
+//项目通用样式
+@import './base/base'
+
+.searchhistory
+  width 1200px
+  height 100%
+  margin 0 auto
+  .htopcenter
+    height 53px
+    line-height 53px
+    background rgba(225, 223, 216, 0.1)
+    padding-left 4px
+    padding-right 9px
+    .rspan
+      float right
+      position relative
+      display none
+      label
+        color #7ccfd7
+      .sectime
+        margin-right 40px
+        color #000000
+    .imgpic
+      float right
+      margin-top 8px
+      display none
+  .hcenter
+    margin-top 7px
+    table
+      overflow hidden
+      .theadtr
+        height 46px
+        line-height 46px
+        // background #F7FAFB
+        background rgba(211, 220, 230, 0.44)
+        .pic
+          width 122px
+        .content
+          width 682px
+          display block
+        .time
+          width 276px
+        .num
+          width 95px
+        .operator
+          width 120px
+        th
+          //border 1px solid #697076
+          border-right 1px solid #cccccc
+          border-top 1px solid #cccccc
+        .noneright
+          border-right 0
+        .topnone
+          border-top 0
+      tbody
+        background rgba(225, 223, 216, 0.1)
+        tr
+          height 110px
+          .content
+            display block
+            width 682px
+            height 110px
+            div
+              overflow hidden
+              text-overflow ellipsis
+              white-space nowrap
+          td
+            //border 1px solid #697076
+            border-right 1px solid #ccc
+            border-top 1px solid #ccc
+            text-align center
+            img
+              max-width 100px
+              max-height 100px
+            button
+              height 29px
+              width 80px
+              border 0px
+              background #598dd6
+              color #ffffff
+              &:focus
+                outline none
+          .noneright
+            border-right 0
+          .topnone
+            border-top 0
+  .page
+    float right
+    margin-top 15px
+    color #598dd6
+    span
+      cursor pointer
+  .cleardiv
+    clear both
+  .el-loading-mask
+    top 400px !important

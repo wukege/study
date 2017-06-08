@@ -1,0 +1,166 @@
+//项目通用样式
+@import './base/base'
+
+//页面公共样式设置
+html,body
+  width 100%
+  margin 0 auto
+  height 100%
+  min-height 100%
+  padding 0
+  background url('../images/bg1.jpg') left top no-repeat
+  //background-size auto 120%
+  min-width 1080px
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family "Microsoft YaHei"
+  .app
+    margin 0 auto
+    height 100%
+    .header
+      height 100px
+      background #598dd6
+      padding 9px
+      margin-bottom 13px
+      .innerhead
+        background #598dd6
+        height 100%
+        img
+          width 120px
+        .centerdiv
+          text-align center
+          color #ffffff
+          font-size 30px
+        .loginuser
+          float right
+          .fontcolor
+            color #ffffff
+          .cupointer
+            cursor pointer
+            color #ffffff
+        .desc
+          margin-top 10px
+          .fontbig
+            font-size 30px
+          .imgright
+            float right
+            margin-left 15px
+            .astyle
+              text-decoration none
+              color #ffffff
+    .foot
+      margin-top 18px
+      font-size 12px
+  .week-alert
+    position: fixed;
+    width 100%
+    height: 100%;
+    line-height: 44px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    font-size: 16px;
+    color #fff
+    text-align right
+    padding 0
+    box-sizing border-box
+    .alert-box
+      position absolute
+      top 50%
+      left 50%
+      width 320px
+      height 160px
+      margin-top -80px
+      margin-left -160px
+      color $font-color-black
+      background #7DCFD7
+      .alert-title
+        height 40px
+        line-height @height
+        text-align left
+        text-indent 10px
+      .alert-con
+        height 60px
+        line-height 60px
+        text-align center
+  .el-loading-mask
+    .el-loading-spinner
+      padding 100px 0
+  .compare-dialog
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+    .compare-content
+      position absolute
+      left 50%
+      top 50%
+      margin-left -425px
+      margin-top -200px
+      width 850px
+      height 468px
+      background #fff
+      padding 10px
+      overflow hidden
+      .compare-header
+        min-height 16px
+        padding 15px
+        border-bottom 1px solid #e5e5e5
+        .close
+          float right
+          font-size 40px
+          font-weight 700
+          line-height 1
+          color #000
+          cursor: pointer;
+          background: 0 0;
+          border: 0;
+          opacity 0.2
+          margin-top -8px
+          border: none;
+          outline: none;
+        .compare-title
+          line-height 1.4
+          font-size: 18px;
+          font-weight 500
+          display inline-block
+      .compare-body
+        position relative
+        padding 15px
+        width 100%
+        box-sizing border-box
+        .integrate-panel
+          width 100%
+          font-size 12px
+          .compare-left
+            width 50%
+            float left
+          .compare-right
+            width 50%
+            float right
+            .compare-focu
+              width 100%
+              height 320px
+              overflow hidden
+              img
+                width 300px
+          .compare-img
+            .compare-similarity
+              word-break: break-all;
+            .compare-upload,
+            .compare-obj
+              p
+                line-height 20px
+                word-break: break-all;
+              .canvas-image
+                width 170px
+                height 170px
+                overflow hidden
+                cursor pointer
+                img
+                  width 100%
